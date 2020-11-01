@@ -3,7 +3,7 @@ import winsound
 
 wn = turtle.Screen() #creating a window
 wn.title("Pong by Magomed Rabadanov")
-wn.bgcolor("black")
+wn.bgcolor("grey")
 wn.setup(width=800, height=600)
 wn.tracer(0) #stops the window from updating
 
@@ -15,7 +15,7 @@ score_b = 0
 paddle_a = turtle.Turtle()
 paddle_a.speed(0) #max possible speed
 paddle_a.shape("square") 
-paddle_a.color("white")
+paddle_a.color("yellow")
 paddle_a.shapesize(stretch_wid=5, stretch_len=1)
 paddle_a.penup() #so it doesn't draw a line
 paddle_a.goto(-350, 0)
@@ -24,7 +24,7 @@ paddle_a.goto(-350, 0)
 paddle_b = turtle.Turtle()
 paddle_b.speed(0) #max possible speed
 paddle_b.shape("square") 
-paddle_b.color("white")
+paddle_b.color("green")
 paddle_b.shapesize(stretch_wid=5, stretch_len=1)
 paddle_b.penup() #so it doesn't draw a line
 paddle_b.goto(350, 0)
@@ -33,7 +33,7 @@ paddle_b.goto(350, 0)
 ball = turtle.Turtle()
 ball.speed(0) #max possible speed
 ball.shape("square") 
-ball.color("white")
+ball.color("black")
 ball.penup() #so it doesn't draw a line
 ball.goto(0, 0)
 ball.dx = 0.2
